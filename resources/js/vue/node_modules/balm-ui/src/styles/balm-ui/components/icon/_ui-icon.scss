@@ -1,0 +1,17 @@
+@use './variables' as icon-variables;
+@use './mixins' as icon-mixins;
+
+.material-icons,
+.material-icons-outlined,
+.material-icons-round,
+.material-icons-two-tone {
+  @include icon-mixins.setIconClass();
+}
+
+@each $key, $value in icon-variables.$types {
+  .md-#{$key}-icon,
+  .md-#{$key}-icon--outlined {
+    color: $value;
+    border-radius: 50%;
+  }
+}

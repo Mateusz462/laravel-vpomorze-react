@@ -1,0 +1,11 @@
+@use './mixins' as shape-mixins;
+
+// Rounded shapes
+.mdc-shape--rounded {
+  @include shape-mixins.roundedShapes();
+}
+
+// Cut shapes
+.mdc-shape--cut {
+  @include shape-mixins.cutShapes();
+}

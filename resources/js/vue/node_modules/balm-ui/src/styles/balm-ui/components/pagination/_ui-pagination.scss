@@ -1,0 +1,104 @@
+@use '@material/theme/theme-color';
+@use '@material/shape/mixins' as shape-mixins;
+@use './variables' as pagination-variables;
+@use './mixins' as pagination-mixins;
+@use '../mixins' as ui-mixins;
+
+.mdc-pagination {
+  .material-icons {
+    font-size: 18px;
+  }
+
+  .mdc-button {
+    min-width: 32px;
+    height: pagination-variables.$height;
+
+    &.mdc-pagination__button--ellipsis {
+      cursor: default;
+      color: theme-color.prop-value(text-hint-on-background);
+    }
+  }
+
+  .mdc-data-table__pagination-button {
+    &:not(.mdc-pagination__button--ellipsis) {
+      color: rgba(theme-color.prop-value(on-surface), 0.87);
+      border: 1px solid rgba(theme-color.prop-value(on-surface), 0.87);
+
+      &:hover {
+        @include pagination-mixins.paginationHover();
+      }
+
+      &.mdc-pagination__button--active {
+        cursor: default;
+        @include ui-mixins.selected(1);
+
+        &:hover {
+          @include ui-mixins.selected(1);
+        }
+      }
+    }
+
+    &:disabled {
+      color: theme-color.prop-value(text-disabled-on-background);
+      border-color: theme-color.prop-value(text-disabled-on-background);
+      cursor: not-allowed;
+    }
+  }
+
+  &.mdc-pagination--left {
+    justify-content: flex-start;
+  }
+  &.mdc-pagination--center {
+    justify-content: center;
+  }
+  &.mdc-pagination--right {
+    justify-content: flex-end;
+  }
+
+  &.mdc-pagination--mini {
+    .mdc-data-table__pagination-trailing {
+      justify-content: center;
+      width: 100%;
+      margin: 0;
+    }
+
+    .mdc-data-table__pagination-navigation {
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .mdc-data-table__pagination-total {
+      margin: 0;
+    }
+
+    .mdc-data-table__pagination-prev-button {
+      order: -1;
+    }
+  }
+}
+
+.mdc-data-table__pagination-rows-per-page {
+  select {
+    @include pagination-mixins.paginationInput();
+  }
+}
+
+.mdc-data-table__pagination-jumper {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 22px;
+
+  .mdc-data-table__pagination-jumper-label {
+    margin-right: 12px;
+  }
+
+  input {
+    @include pagination-mixins.paginationInput();
+  }
+
+  button {
+    height: 24px;
+    line-height: 22px;
+    border: 1px solid #d9d9d9;
+  }
+}

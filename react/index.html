@@ -1,0 +1,228 @@
+<html lang="pl" class="mdl-js"><head itemscope="" itemtype="http://schema.org/WebSite">
+
+		<script id="facebook-jssdk" src="https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js"></script><script async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.gstatic.com/recaptcha/releases/_7Co1fh8iT2hcjvquYJ_3zSP/recaptcha__pl.js" crossorigin="anonymous" integrity="sha384-QKhgmSdvZelQpB0euWt5LqnMP1LtFmGd1L9ZGZ9D2D4fQYMr/Dk1qGM3DT0RHtzz"></script><script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script type="text/javascript" charset="UTF-8" src="https://cookie-script.com/s/8f39b274fb106e99733345300b6af92c.js"></script>
+		<script type="text/javascript">
+		$(window).load(function() {
+			$(".loader").fadeOut("slow");
+		})
+		</script>
+		<style>
+			.loader {
+				position: fixed;
+				left: 0px;
+				top: 0px;
+				width: 100%;
+				height: 100%;
+				z-index: 9999;
+				background: url('images/rolling.gif') 50% 50% no-repeat rgb(249,249,249);
+			}
+
+			.ui-draggable, .ui-droppable {
+				background-position: top;
+			}
+
+			.demo-list-action {
+				width: 300px;
+			}
+			.pointer {
+				text-align: center;
+			}
+
+			
+		</style>
+
+		<meta charset="utf-8">
+		<title itemprop="name">Grafik - Panel vZTM</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<link rel="canonical" href="https://www.vztm.pl/" itemprop="url">
+		<script type="application/ld+json">
+		{
+		  "@context": "http://schema.org",
+		  "@type": "Organization",
+		  "name": "Wirtualny Zarząd Transportu Miejskiego",
+		  "url": "https://www.vztm.pl/",
+		  "sameAs": [
+			"https://www.facebook.com/wirtualnyzarzadtransportumiejskiego",
+			"https://www.instagram.com/vztm_insta/",
+			"https://www.youtube.com/c/wirtualnyzarzadtransportumiejskiego"
+		  ]
+		}
+		</script>
+
+		<script type="text/javascript">
+			const site_address = 'https://panel.vztm.pl';
+			const WS_ADDRESS = 'http://localhost:3000';
+		</script>
+
+
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+		<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-deep_purple.min.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+		<link rel="icon" sizes="192x192" href="https://panel.vztm.pl/images/icon.png" type="image/png">
+		<script defer="" src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+		<link rel="stylesheet" href="https://panel.vztm.pl/css/animate.css">
+
+		<link rel="stylesheet" type="text/css" href="https://panel.vztm.pl/css/dialog-polyfill.css">
+		<script src="https://panel.vztm.pl/js/dialog-polyfill.js"></script>
+
+
+		<script type="text/javascript" src="https://panel.vztm.pl/js/vztm-functions.js"></script>
+
+        <script type="text/javascript">
+        const mainSocket = io.connect(WS_ADDRESS, {
+            path: '/main',
+            auth: {
+                token: WS_TOKEN
+            },
+            reconnectionDelay: 6000,
+            reconnection: true
+        })
+        </script>
+		<script type="text/javascript" src="https://panel.vztm.pl/js/vztm.js" defer=""></script>
+
+		<script type="text/javascript" src="https://panel.vztm.pl/js/js.cookie.js"></script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/socket.io-client@4.2.0/dist/socket.io.min.js"></script>
+		<script type="text/javascript" src="https://panel.vztm.pl/js/lodash.min.js" defer=""></script>
+		<script type="text/javascript" src="https://panel.vztm.pl/js/axios.min.js" defer=""></script>
+
+		<script src="https://panel.vztm.pl/js/quill.min.js"></script>
+		<link href="https://panel.vztm.pl/css/quill.snow.css" rel="stylesheet">
+
+		<script src="https://www.google.com/recaptcha/api.js"></script>
+
+
+		<link rel="stylesheet" href="https://panel.vztm.pl/css/getmdl-select.min.css">
+		<script defer="" src="https://panel.vztm.pl/js/getmdl-select.min.js"></script>
+
+		<link rel="stylesheet" href="https://panel.vztm.pl/css/style.css?v=1.15.3" type="text/css">
+
+		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+
+		<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-59823032-2', 'auto');
+		ga('send', 'pageview');
+		</script>
+
+	</head>
+	<body class="dark-mode">
+		<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div></div></div></div>
+
+		<script>
+			window.fbAsyncInit = function() {
+				FB.init({
+					xfbml: true,
+					version: 'v3.3',
+					appId: '108087233179454'
+				});
+			};
+
+			(function(d, s, id) {
+				var js, fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s); js.id = id;
+				js.src = "https://connect.facebook.net/pl_PL/sdk/xfbml.customerchat.js";
+				fjs.parentNode.insertBefore(js, fjs);
+			}(document, 'script', 'facebook-jssdk'));
+		</script>
+
+		<div class="loader" style="display: none;"></div>
+
+				<div class="mdl-layout__container has-scrolling-header"><div class="mdl-layout mdl-js-layout has-drawer is-upgraded" data-upgraded=",MaterialLayout">
+		  <header class="mdl-layout__header mdl-layout__header--scroll">
+			<div class="mdl-layout__header-row">
+			  <span class="mdl-layout-title">
+          <img style="margin-right: 10px;" src="https://panel.vztm.pl/images/logo.png" height="35" oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+          <span>Panel zarządzania</span>
+          <sup style="font-size: .6em">v1.15.3</sup>
+        </span>
+			  <div class="mdl-layout-spacer"></div>
+			  <nav class="mdl-navigation">
+          <a href="przewodnik" style="color: #FFF;" class="mdl-button mdl-js-button mdl-button--icon" data-upgraded=",MaterialButton">
+            <i class="material-icons">help</i>
+          </a>
+
+
+
+          <a href="wiadomosci" style="color: white;" class="mdl-button mdl-js-button" data-upgraded=",MaterialButton">
+            <i class="material-icons">local_post_office</i>
+          </a>
+
+          <div id="vztm-notifications"><div><div class="" data-badge="0"><button class="mdl-button mdl-js-button" style="color: white;" data-upgraded=",MaterialButton"><i class="material-icons ">notifications</i></button></div><div style="position: relative;"><div class="notifications-container"><div class="arrow"></div><div class="list"><h5 class="title">Powiadomienia</h5><div style="display: flex; justify-content: center; align-items: center; padding: 30px 0px;"><div class="mdl-spinner mdl-spinner--single-color mdl-js-spinner is-active is-upgraded" data-upgraded=",MaterialSpinner"><div class="mdl-spinner__layer mdl-spinner__layer-1"><div class="mdl-spinner__circle-clipper mdl-spinner__left"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__gap-patch"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__circle-clipper mdl-spinner__right"><div class="mdl-spinner__circle"></div></div></div><div class="mdl-spinner__layer mdl-spinner__layer-2"><div class="mdl-spinner__circle-clipper mdl-spinner__left"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__gap-patch"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__circle-clipper mdl-spinner__right"><div class="mdl-spinner__circle"></div></div></div><div class="mdl-spinner__layer mdl-spinner__layer-3"><div class="mdl-spinner__circle-clipper mdl-spinner__left"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__gap-patch"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__circle-clipper mdl-spinner__right"><div class="mdl-spinner__circle"></div></div></div><div class="mdl-spinner__layer mdl-spinner__layer-4"><div class="mdl-spinner__circle-clipper mdl-spinner__left"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__gap-patch"><div class="mdl-spinner__circle"></div></div><div class="mdl-spinner__circle-clipper mdl-spinner__right"><div class="mdl-spinner__circle"></div></div></div></div></div></div></div></div></div></div>
+
+          <button class="mdl-button mdl-js-button" disabled="" data-upgraded=",MaterialButton">
+            <span style="color: #FFF;">Witaj Krzysztof!</span>
+          </button>
+
+          <a class="mdl-navigation__link" href="https://panel.vztm.pl/logout.php">
+            <span style="color: #FFF;">Wyloguj się</span>
+          </a>
+			  </nav>
+			</div>
+		  </header>
+		  <div class="mdl-layout__drawer" aria-hidden="true">
+			<span class="mdl-layout-title"><img style="margin-top: 10px;" src="https://panel.vztm.pl/images/logobiale.png" height="35" oncontextmenu="return false" ondragstart="return false" onselectstart="return false"><br>Menu zadań</span>
+			<nav class="mdl-navigation">
+			  <a class="mdl-navigation__link" href="https://panel.vztm.pl/strona-glowna"><i class="material-icons">explore</i> Start</a>
+			  <a class="mdl-navigation__link" href="https://panel.vztm.pl/raporty"><i class="material-icons">assignment</i> Raporty</a>
+			  <a class="mdl-navigation__link" href="https://panel.vztm.pl/grafik"><i class="material-icons">perm_contact_calendar</i> Grafik</a>
+			  			  <a class="mdl-navigation__link" href="https://panel.vztm.pl/tabor"><i class="material-icons">directions_bus</i> Tabor</a>			  <a class="mdl-navigation__link" href="https://panel.vztm.pl/wnioski"><i class="material-icons">class</i> Wnioski</a>
+			  <a class="mdl-navigation__link" href="https://panel.vztm.pl/zgloszenia"><i class="material-icons">report_problem</i> Zgłoszenia</a>
+			  <a class="mdl-navigation__link" href="https://panel.vztm.pl/pobieralnia"><i class="material-icons">get_app</i> Pobieralnia</a>
+			  <a class="mdl-navigation__link" href="https://panel.vztm.pl/ustawienia-profilu"><i class="material-icons">settings</i> Ustawienia profilu</a>
+			  <a class="mdl-navigation__link" href="https://panel.vztm.pl/patron"><i class="material-icons">card_giftcard</i> Zostań patronem!</a>
+			</nav>
+		  </div>
+		  <div aria-expanded="false" role="button" tabindex="0" class="mdl-layout__drawer-button"><i class="material-icons"></i></div><main class="mdl-layout__content">
+			<div class="page-content">
+			<div class="wrapper">
+			<style>
+				.demo-list-action {
+				  width: 300px;
+				}
+			</style>
+                <div id="vztm-graph">
+                    <div class="vztm-graph--header"></div>
+                </div>
+            <script type="module" src="/src/main.jsx"></script>
+
+
+		<div id="snackbar" class="mdl-js-snackbar mdl-snackbar" data-upgraded=",MaterialSnackbar">
+			<div class="mdl-snackbar__text"></div>
+			<button class="mdl-snackbar__action" type="button" aria-hidden="true"></button>
+		</div>
+		<script src="https://panel.vztm.pl/js/vztm-snackbar.js"></script>
+				<dialog id="popupMessage" class="mdl-dialog">
+			<h4 class="mdl-dialog__title">Chrono - Święto Niepodległości 2021</h4>
+			<div class="mdl-dialog__content">
+				<p>10.11.2021 22:48</p>
+				<p>W pobieralni pojawiło się "Chrono" na Święto Niepodległości 2021. Prosimy o obowiązkowe zapoznanie się z nim oraz instalację.</p>
+			</div>
+			<div class="mdl-dialog__actions">
+				<button type="button" class="mdl-button close">Zamknij</button>
+			</div>
+		</dialog>
+		<script>
+		var popup = document.querySelector('#popupMessage');
+		popup.querySelector('.close').addEventListener('click', function() {
+			popup.close();
+		});
+		</script>
+		<script src="https://cdn.socket.io/4.0.1/socket.io.min.js?v=1"></script>
+		<script type="text/javascript" src="socketio.js"></script>
+
+
+
+
+</div></div></main><div class="mdl-layout__obfuscator"></div></div></div></body></html>

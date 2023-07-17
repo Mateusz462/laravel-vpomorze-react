@@ -1,0 +1,3 @@
+@use '../window/variables' as window-variables;
+
+$width: window-variables.$width !default;

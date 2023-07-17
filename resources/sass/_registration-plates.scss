@@ -1,0 +1,171 @@
+@font-face {
+    font-family: 'Arklats';
+    src: url('/fonts/arklatrs-webfont.ttf');
+  }
+  
+  .registration-plate {
+    display: flex;
+    justify-content: flex-start;
+    margin: .5em 0;
+  
+    &.left {
+      justify-content: flex-start;
+    }
+  
+    &.center {
+      justify-content: center;
+    }
+  
+    &.right {
+      justify-content: flex-end;
+    }
+  
+    --reg_plate_size: 3em;
+    --reg_plate_sign_move: 4px;
+    --reg_plate_sign_move_pl: 5px;
+    --reg_plate_border: 4px;
+    --reg_plate_border_radius: 6px;
+    --reg_plate_border_color: #000;
+  
+    &__container {
+      font-size: var(--reg_plate_size);
+      display: inline-flex;
+      line-height: initial;
+      //box-shadow: 0 5px 5px -2px #666666, -5px 2px 5px -5px #868686, 5px 2px 5px -5px #868686;
+  
+      &.registration-plate {
+        &__size {
+          &--xl {
+            --reg_plate_size: 5em;
+            --reg_plate_sign_move: 6px;
+            --reg_plate_sign_move_pl: 7px;
+            --reg_plate_border: 4px;
+            --reg_plate_border_radius: 6px;
+          }
+  
+          &--large {
+            --reg_plate_size: 3em;
+            --reg_plate_sign_move: 4px;
+            --reg_plate_sign_move_pl: 5px;
+            --reg_plate_border: 4px;
+            --reg_plate_border_radius: 6px;
+          }
+  
+          &--medium {
+            --reg_plate_size: 2em;
+            --reg_plate_sign_move: 2px;
+            --reg_plate_sign_move_pl: 2px;
+            --reg_plate_border: 3px;
+            --reg_plate_border_radius: 3px;
+          }
+  
+          &--small {
+            --reg_plate_size: 1em;
+            --reg_plate_sign_move: 1px;
+            --reg_plate_sign_move_pl: 1px;
+            --reg_plate_border: 2px;
+            --reg_plate_border_radius: 2px;
+          }
+        }
+  
+        &__pl {
+          font-family: 'Arklats';
+          border: var(--reg_plate_border) solid var(--reg_plate_border_color);
+          border-radius: var(--reg_plate_border_radius);
+          user-select: none;
+          color: var(--reg_plate_border_color);
+          background-color: #FFF;
+  
+          .vintage-icon {
+            display: none;
+          }
+  
+          &-old {
+            background-color: #000;
+            color: #FFF;
+  
+            .signature,
+            .vintage-icon {
+              display: none;
+            }
+  
+          }
+  
+          &-electric {
+            background-color: #9BCF9C;
+          }
+  
+          &-vintage {
+            background-color: #FFB200;
+  
+            .vintage-icon {
+              display: inline-block;
+  
+              &::before {
+                content: '(';
+              }
+            }
+          }
+  
+          &-temporary {
+            --reg_plate_border_color: #A72E2E;
+          }
+  
+          &-professional {
+            --reg_plate_border_color: #2B652B;
+          }
+  
+          .signature {
+            &__euro {
+              background-color: #003399;
+              display: inline-flex;
+              padding: 4px 0;
+              justify-content: center;
+              align-items: center;
+  
+              &::before {
+                content: '*';
+                color: #FCDA00;
+                transform: translateX(var(--reg_plate_sign_move));
+              }
+  
+              &::after {
+                content: '|';
+                color: #FFF;
+                transform: translateX(var(--reg_plate_sign_move_pl));
+              }
+            }
+  
+            &__pl {
+              background-color: #003399;
+              display: inline-flex;
+              padding: 4px 0;
+              justify-content: center;
+              align-items: center;
+  
+              &::before {
+                content: '~';
+                color: #FF0000;
+                transform: translateX(var(--reg_plate_sign_move));
+              }
+  
+              &::after {
+                content: '`|';
+                color: #FFF;
+                transform: translateX(var(--reg_plate_sign_move));
+              }
+            }
+          }
+  
+          .registration {
+            padding: .08em .1em;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-width: calc(1.2ch * 7.5);
+          }
+        }
+      }
+    }
+  }
+  

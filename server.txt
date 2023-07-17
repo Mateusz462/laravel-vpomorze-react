@@ -1,0 +1,58 @@
+9B5D505AB7D8D88A
+2.4G-vnet-D3BA8E
+
+Dobór półfabrykatów
+wielkośc prod, kalsa przedmiotu obrabianego(wał, tarcza itp), dostępne wymiary i kształt przedmiotu obr, dokładność, mat. konieczność obróbki powierzchni, klasa dokładności, możliwości produkcyjne zakładu, specjalne zalecenia dot. warunków obróbki
+Półfabrykaty z materiałów hutniczych - 
+-Pręty mogą być walcowane okrągłe w zakresie średnic (10-250mm) o dokładności wykonania zwykłej lub podwyższonej. Materiał prętowy jest dostarczany w postaci prostych odcinków, o przekroju okrągłym, płaskim(prostokątnym), kwadratowym i sześciokątnym. Pręty mogą też być ciągnione, łuszczone, szlifowane i polerowane.
+-Blachy to wyroby walcowane najczęściej na gorąco, dostarczane w formie arkuszy, mają duże zastosowanie w przemyśle motoryzacyjnym.
+-Rury w przemyśle maszynowym są stosowane rury stalowe bez szwu lub ze szwem. Rury bez szwu otrzymuje się metodą walcowania na gorąco lub ciągnienia. Rury ze szwem otrzymuje się przez zgrzewanie lub spawanie taśm lub blach.
+Wykroje - 
+Otrzymywane są z mat. hut. np. z płaskowników, blach, płyt, itp. Wykonuje się je metodą mechaniczną na nożycach, prasach przez cięcie, wykrawanie, przycinanie, dziurkowanie, przepychanie itp., metodą termiczną przez wycinanie laserowe, plazmowe oraz cięcie wodą.
+Półfabrykaty tłoczone - 
+Otrzymuje się przez plastyczne kształtowanie materiału (blachy) na zimno lub na gorąco przez prasowanie, wyoblanie, tłoczenie itp.
+Półfabrykaty spajane -
+Stosując spawanie lub zgrzewanie, można wyeliminować skomplikowane i pracochłonne odlewy i odkuwki, łącząc w ten sposób el. tłoczone, kute i walcowane
+
+
+Sposoby magazynowania materiałów
+Prace magazynowe obejmują czynności z rozładunkiem i załadunkiem towarów, obsługą
+urządzeń transportu wewnątrzmagazynowego, np. wózków paletowych i widłowych oraz ręcznym przenoszeniem i podnoszeniem ładunków
+1. Główne zagrożenia
+- przeciążenia układu mięśniowo-szkieletowego podczas ręcznego podnoszenia i przenoszenia materiałów
+- upadki z wysokości,
+- potknięcia, poślizgnienia i upadki na powierzchni,
+- przygniecenia, zmiażdżenia przez poruszające się maszyny i urządzenia,
+- uderzenia przez spadające i przenoszone przedmioty,
+- zagrożenia związane z przechowywaniem substancji toksycznych i wybuchowych.
+2. Pomieszczenia magazynów - wymagania
+Budynki magazynów powinny być murowane i ognioodporne. Ważne jest, aby podłogi były odporne na działanie
+przechowywanych w magazynie substancji oraz na uszkodzenia mechaniczne, gdyż wszelkie nierówności utrudniają
+ruch wózków i poruszanie się pracowników. Jeśli to możliwe powinny tworzyć jeden poziom, bez progów i pochylni.
+
+W każdym pomieszczeniu muszą znajdować się czytelne tablice, określające dopuszczalne obciążenie stropu na 1m2. Ściany i sufit muszą być odporne na działanie przechowywanych substancji oraz, tak jak
+i podłoga, łatwe do odkurzania lub zmywania
+
+Okna powinny byż zabezpieczone przed włamaniem. Stosunek powierzchni oszklonej okien do powierzchni podłogi powinien wynosić co najmniej 1/12. Oprócz oświetlenia dziennego powinno być 
+zapewnione odpowiednie oświetlenie sztuczne. W miejscach przechowywania drobnych części należy odczytywać dodatkowe lampy.
+
+Magazyny powinny być wyposażone w odpowiednią wentylację: naturalną lub grawitacyjną -
+w miejscach, w których nie przechowuje sięł materiaów niebezpiecznych.
+
+Wysokość temperatury w pomieszczeniach magazynu zależy od rodzaju składowych materiałów. 
+Rodzaj ogrzewania musi odpowiadać przepisom o ochronie przeciwpożarowej. Wskazane jest, aby 
+magazyn był wyposażony w instalację wodną i kanalizacyjną. W magazynach materiałów niebezpiecznych instalacje takie są wymagane przepisami. Instalacja elek. musi być dostosowana do przechowywania materiałów.
+
+3. Podstawowe zasady magazynowania
+-Pracownicy powninni przejść szkolenie BHP w zakresie przechowywania materiałów szkodliwych i niebezpiecznych oraz przenoszenia i przewożenia ładunków.
+-Obowiązkiem zakładu jest wyposażenie pracownika w odzież roboczą i odpowiednią ochronę osobistą,
+-Przez przystąpieniem do pracy wykonywanej po raz pierwszy, mogącej spowodować zagrożenia, pracownikowi należy pouchyć o bezpiecznym sposobie wykonania zadań,
+-Magazyn powinien być wyposażony w urządzenia do składowania (regały, pojemniki itp), oraz odpowiedni sprzęt transportu wew. np. wózki podnośnikowe,
+-Materiały należy tak składować, aby nie stwarzały zagrożenia dla pracowników oraz nie były narażone na uszkodzenie, zamoczenie itp.
+-Materiałów nie wolno układać na drogach transportu wewnętrznego, drogach ewakuacyjnych i przejściach dla pieszych.
+
+4.składowanie przedmiotów w magazynie:
+- drobne przedmioty przechowuje się w pojemnikach dostosowanych do regałów
+- wyroby walcowe ze stali należy prezchowywać w specjalnych klamrach, a wyroby walcowane w krótkich odcinkach - na półkach w głębokich regałach
+- drut w kręgach
+- opony najwygodnie prezchowywać na drewnianych lub metalowych stelażach

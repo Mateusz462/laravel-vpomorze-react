@@ -1,0 +1,134 @@
+
+#vztm-graph{
+    width:100%;
+    font-family:"Open Sans",Helvetica
+}
+#vztm-graph .vztm-graph--header{
+    position:sticky;
+    top:0;
+    z-index:1000
+}
+#vztm-graph .vztm-graph--header div .date-string,#vztm-graph .vztm-graph--header div .date-day{
+    width:100%
+}
+#vztm-graph .vztm-graph--header div.past{
+    background:#29394a
+}
+#vztm-graph .vztm-graph--header div.future{
+    background:#3d556f
+}
+#vztm-graph .vztm-graph--header,#vztm-graph .vztm-graph--content .graph-content--row{
+    display:flex;
+    justify-content:center
+}
+#vztm-graph .vztm-graph--header,#vztm-graph .vztm-graph--content .graph-content--row .user{
+    background:#34495e;
+    text-transform:uppercase;
+    font-size:.7em;
+    font-weight:bold;
+    color:#efefef
+}
+#vztm-graph .vztm-graph--header.red,#vztm-graph .vztm-graph--content .graph-content--row .user.red{
+    background:#e74c3c
+}
+#vztm-graph .vztm-graph--header>div,#vztm-graph .vztm-graph--content .graph-content--row>div{
+    text-align:center;
+    box-sizing:border-box;
+    padding:15px 20px;
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    justify-content:center;
+    min-height:82px
+}
+#vztm-graph .vztm-graph--header>div.hidden,#vztm-graph .vztm-graph--content .graph-content--row>div.hidden{
+    display:none
+}
+#vztm-graph .vztm-graph--content .graph-content--row:nth-child(2n){
+    background:#eff0f1
+}
+#vztm-graph .vztm-graph--content .graph-content--row:nth-child(2n+1){
+    background:#fff
+}
+#vztm-graph .vztm-graph--content .graph-content--row>div{
+    color:#2e2e2e
+}
+#vztm-graph .vztm-graph--content .graph-content--row>div>*{
+    width:100%
+}
+#vztm-graph .vztm-graph--content .graph-content--row>div.pointer{
+    color:#fff;
+    text-align:left;
+    justify-content:flex-start;
+    font-size:.8em;
+    font-weight:bold;
+    letter-spacing:.7px
+}
+#vztm-graph .loader-bar{
+    padding:50px;
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap
+}
+#vztm-graph .loader-bar p{
+    padding:20px;
+    width:100%;
+    text-align:center
+}
+body #vztm-graph .vztm-graph--header{
+    background:#101317;
+    color:#fff
+}
+body #vztm-graph .vztm-graph--header div.past{
+    background:#000
+}
+body #vztm-graph .vztm-graph--header div.future{
+    background:#1b1e23
+}
+body #vztm-graph .vztm-graph--content .graph-content--row .user{
+    background:#101317
+}
+body #vztm-graph .vztm-graph--content .graph-content--row:nth-child(2n+1){
+    background-color:#212121
+}
+body #vztm-graph .vztm-graph--content .graph-content--row:nth-child(2n){
+    background-color:#292929
+}
+body #vztm-graph .vztm-graph--content .graph-content--row div {
+    color:#fff
+}
+body #vztm-graph .vztm-graph--content .graph-content--row div button {
+    color:#fff
+}
+.brown {
+    background-color: rgb(57, 23, 4)
+}
+
+.orange {
+    background-color: rgb(205, 83, 15)
+}
+
+.purple {
+    background-color: rgb(98, 12, 133)
+}
+
+.blue {
+    background-color: rgb(15, 120, 205)
+}
+
+.green {
+    background-color: rgb(27, 133, 28)
+}
+
+.red {
+    background-color: rgb(255, 0, 0)
+}
+
+.navy {
+    /* #000032 */
+    background-color: rgb(13, 12, 62)
+}
+
+/* ================================================================================================= */
+@import 'notifications';
+@import 'shoutbox';
